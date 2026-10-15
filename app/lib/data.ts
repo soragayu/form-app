@@ -12,7 +12,7 @@ export async function handleSubmit(prevState: any, formData: FormData) {
         `;
         return {
             success: true,
-            message: `「${bandName}」を登録しました。`
+            message: `${bandName}を登録しました。`
         };
     } catch (error) {
         console.error(error);

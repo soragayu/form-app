@@ -19,10 +19,10 @@ export default function Home() {
         </div>
         <div className="w-full max-w-160 flex justify-start">
           <button type="submit" disabled={isPending} className="w-20 p-2 rounded-xl bg-[#0800FF] text-[#FFFFFF] disabled:opacity-50">{isPending ? "送信中" : "提出"}</button>
-          {state?.message && (
-            <p className={state.success ? "text-green-500" : "text-red-500"}>{state.message}</p>
-          )}
         </div>
+        {state?.message && (
+          <p className={state.success ? "text-green-500" : "text-red-500"}>{state.message}</p>
+        )}
       </form>
     </div>
   );
