@@ -21,7 +21,9 @@ export default function Home() {
           <button type="submit" disabled={isPending} className="w-20 p-2 rounded-xl bg-[#0800FF] text-[#FFFFFF] disabled:opacity-50">{isPending ? "送信中" : "提出"}</button>
         </div>
         {state?.message && (
-          <p className={state.success ? "text-green-500" : "text-red-500"}>{state.message}</p>
+          <div className="w-full max-w-160 flex justify-start">
+            <p className={state.success ? "text-green-500" : "text-red-500"}>{state.message}</p>
+          </div>
         )}
       </form>
     </div>
