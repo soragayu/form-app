@@ -12,7 +12,7 @@ type Props = {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body>{children}</body>
     </html>
   );
