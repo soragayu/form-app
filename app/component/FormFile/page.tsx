@@ -28,8 +28,8 @@ export default function FormFile({ bands }: Props) {
         <form action={formAction} className="w-full max-w-170 flex flex-col items-center gap-10">
             <select name="id" className="w-full max-w-170 flex flex-col gap-2 p-4 rounded-2xl bg-[#FFFFFF] text-base">
                 <option value="" >選択してください</option>
-                {bands.map((bands) => (
-                    <option key={bands.id} value={bands.id}>{bands.name}</option>
+                {bands?.map((band) => (
+                    <option key={band.id} value={band.id}>{band.name}</option>
                 ))}
             </select>
             < div className="w-full max-w-170 p-4 bg-[#FFFFFF] rounded-2xl flex flex-col items-start gap-4">
