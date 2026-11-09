@@ -6,7 +6,7 @@ export default function Button({ state, isPending }: { state: any, isPending: bo
             </div>
             {state?.message && (
                 <div className="w-full max-w-170 flex justify-end">
-                    <p className={state.success ? "text-green-500" : "text-red-500"}>{state.message}</p>
+                    <p className={state.success ? "text-whites-500" : "text-red-500"}>{state.message}</p>
                 </div>
             )}
         </>
