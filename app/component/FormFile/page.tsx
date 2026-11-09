@@ -15,16 +15,7 @@ type Props = {
 
 export default function FormFile({ bands }: Props) {
 
-    const [fileName, setFileName] = useState<string | null>(null);
     const [state, formAction, isPending] = useActionState(handleForm, null);
-
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        if (event.target.files && event.target.files.length > 0) {
-            setFileName(event.target.files[0].name);
-        } else {
-            setFileName(null);
-        }
-    }
 
     return (
         <form action={formAction} className="w-full max-w-170 flex flex-col items-center gap-10">
